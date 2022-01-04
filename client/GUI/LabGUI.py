@@ -44,12 +44,12 @@ class LabGUI(tk.Frame):
         fileMenu.add_command(label="Indietro", command=gotoMain)
         self.menuBar.add_cascade(label="File", menu=fileMenu)
 
-        erisMenu = tk.Menu(self.menuBar)
-        erisMenu.add_command(label="Upload", command=self.upload)
+        epikMenu = tk.Menu(self.menuBar)
+        epikMenu.add_command(label="Upload", command=self.upload)
         def openControlPanel():
             ControlPanelGUI(self.labs, self.controlPanel)
-        erisMenu.add_command(label="ERIS control panel", command=openControlPanel)
-        self.menuBar.add_cascade(label="eris", menu=erisMenu)
+        epikMenu.add_command(label="EPIK control panel", command=openControlPanel)
+        self.menuBar.add_cascade(label="epik", menu=epikMenu)
 
         t = tk.Text(self)  # , bg="red" )
         t.grid(row=1, column=0, sticky="nswe")

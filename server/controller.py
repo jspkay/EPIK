@@ -6,7 +6,7 @@ class Controller:
     taskList = {}
     available = []
 
-    path = os.path.expanduser("~/ERIS")
+    path = os.path.expanduser("~/EPIK")
 
     def getAvailable(self):
         self.available = os.listdir(self.path)
@@ -14,7 +14,7 @@ class Controller:
 
     def start(self, strLab):
         if strLab in self.available:
-            path = os.path.expanduser(f"~/ERIS/{strLab}")
+            path = os.path.expanduser(f"~/EPIK/{strLab}")
             self.taskList[strLab] = sp.Popen(["python", path],
                                              stdout=sp.PIPE, stdin=sp.PIPE, stderr=sp.PIPE)
             print("Started...")

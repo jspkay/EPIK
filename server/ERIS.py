@@ -6,7 +6,7 @@ import os, json
 
 def uploadLaboratory(name, fileStr):
     print(f"Name: {name}\nContent: {fileStr}")
-    path = os.path.expanduser(f"~/ERIS/{name}")
+    path = os.path.expanduser(f"~/EPIK/{name}")
     f = open(path, "w")
     f.write(fileStr)
     f.close()

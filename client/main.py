@@ -34,7 +34,7 @@ def gotoLab(e, index):
 
 def addToolsMenu(menu):
     toolsMenu = tk.Menu(menu)
-    toolsMenu.add_command(label="ERIS control panel", command=openControlPanel)
+    toolsMenu.add_command(label="EPIK control panel", command=openControlPanel)
     menu.add_cascade(label="Tools", menu=toolsMenu)
 
 
@@ -45,7 +45,7 @@ def openControlPanel():
 cp = ControlPanel.ControlPanel()
 
 root = tk.Tk()
-root.title("ERIS")
+root.title("EPIK")
 
 mainAct = MainGUI.MainGUI(root, labs, handler=gotoLab)
 

@@ -18,7 +18,7 @@ class ControlPanelGUI:
 
     def __init__(self, activities, controlpanel=None):
         self.root = tk.Toplevel()
-        self.root.title("ERIS' Control Panel")
+        self.root.title("EPIK' Control Panel")
         self.root.geometry("500x500")
 
         self.controlPanel = cp.ControlPanel() if controlpanel is None else controlpanel
@@ -86,7 +86,7 @@ class ControlPanelGUI:
         return self.controlPanel
 
     def connect(self):
-        ip_add = dialog.askstring('IP', "Inserisci l'ip di ERIS")
+        ip_add = dialog.askstring('IP', "Insepikci l'ip di EPIK")
 
         if self.controlPanel.connect(ip_add):
             self.statusLabelText.set(f"connected ({ip_add})")
