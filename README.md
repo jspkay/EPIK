@@ -37,4 +37,5 @@ As the user clicks on the activity, the document will be opened and it contains 
 > Note: at the moment of writing this document, the start and stop features don't work properly and have to be refined. 
 - In the control panel interface, it is possibile to connect EPIK using the menu "Conection > connect..."
 - Under "epik > upload" it is possibile to upload the written code, although it is necessary to connect EPIK beforehand.
+
 ![Control Panel and code editor](./screenshots/control_panel_and_editor.png)
