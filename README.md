@@ -1,10 +1,5 @@
 # EPIK
-The solution is E.P.I.K., the Education Programmable Improving Kit. Its goal is to provide technical school professors with tools to make the laboratory
-activities more engaging. This is achieved by giving the students a gaol, e.g. the students will allow E.P.I.K. to move and talk, and to do so they will 
-have to use the concepts learnt in the classroom. The activities that E.P.I.K. provides are aligned with the technical school curricula, allowing the teacher 
-to effectively integrate our solution in the educational path of the students. The kit will be composed of common hardware components and of a software, the 
-latter of which provides both an interface to easily program E.P.I.K. and a guide to organise and perform the experiences. The kit also delivers a plastic case 
-which will serve as lodging for the hardware components, and comes in a box.
+E.P.I.K., the Education Programmable Improving Kit.
 
 # Dependences
 The software is written in python (version 3). It is necessary to install the following packages:
@@ -31,3 +26,15 @@ python3 ERIS.py
 ```python
 python3 main.py
 ```
+
+# How the students use it
+The server runs on the Raspberry Pi. At first it just displays its own ip address which will be used by the students to connect the client to the server.
+The client software runs on the laboraty computers and it shows all the available activites in the main interface. The available activities correspond to simple documents (pdf preferred) which are placed in the directory client/pdf. We uploaded a single exmaple called "Amp_ADC.pdf" (all the other files are just placeholders).
+As the user clicks on the activity, the document will be opened and it contains all the useful information needed to complete the activity. The interface will swap to a simple text editor in which the student can write his code.
+![Main interface](./screenshots/main_client.png)
+
+- Under "epik > EPIK control panel..." in the context menu it is possibile to manage EPIK. The new window displays the activities previously uploaded on EPIK and can be run or stopped. 
+> Note: at the moment of writing this document, the start and stop features don't work properly and have to be refined. 
+- In the control panel interface, it is possibile to connect EPIK using the menu "Conection > connect..."
+- Under "epik > upload" it is possibile to upload the written code, although it is necessary to connect EPIK beforehand.
+![Control Panel and code editor](./screenshots/control_panel_and_editor.png)
